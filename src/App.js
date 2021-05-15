@@ -8,6 +8,7 @@ import NotFound from './components/notFound'
 import Customers from './components/customers'
 import LoginForm from './components/loginForm'
 import Register from './components/register'
+
 import { Route, Redirect, Switch } from 'react-router-dom';
 import './App.css'
 
@@ -21,6 +22,7 @@ class App extends Component {
       <Switch>
       <Route path="/login" component={LoginForm} ></Route>
       <Route path="/movies/:id" component={MovieForm}/>
+      <Route path="/movies/new" component={MovieForm}/>
         <Route path="/movies" component={Movies} ></Route>
         <Route path="/customers" component={Customers} ></Route>
         <Route path="/rentals" component={Rentals} ></Route>
